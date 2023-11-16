@@ -15,5 +15,7 @@ def get_response(message: str) -> str:
     if p_message == 'Oliver':
         return 'Go study nigga'
     
-    return 'I didn\'t understand what you wrote. Try typing "!help".'
-
+    if p_message == 'hey':
+        return 'Sup brother!!'
+    
+    return 'I/m in development for this functionality.'
