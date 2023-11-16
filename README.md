@@ -1,4 +1,4 @@
-# Vebrix 2.0
+# Vebrix
  
 A bot that can do alot of things. 
 
