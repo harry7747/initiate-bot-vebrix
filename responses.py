@@ -9,13 +9,13 @@ def get_response(message: str) -> str:
     if message == 'roll':
         return str(random.randint(1, 6))
     
-    if p_message == '!help':
+    if p_message == "!help":
         return '`This is a help message.`'
     
-    if p_message == 'Oliver':
+    if p_message == "oliver":
         return 'Go study nigga'
     
-    if p_message == 'hey':
+    if p_message == "hey":
         return 'Sup brother!!'
     
-    return 'I/m in development for this functionality.'
+    return 'I am in development for this functionality.'
