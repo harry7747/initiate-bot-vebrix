@@ -4,7 +4,7 @@ def get_response(message: str) -> str:
     p_message = message.lower()
     
     if p_message == "hello":
-        return 'Hey there!'
+        return 'initiate_process'
     
     if message == 'roll':
         return str(random.randint(1, 6))
@@ -16,6 +16,6 @@ def get_response(message: str) -> str:
         return 'Go study nigga'
     
     if p_message == "hey":
-        return 'Sup brother!!'
+        return 'initiate_process'
     
-    return 'I am in development for this functionality.'
+    return 'initiate_process'
