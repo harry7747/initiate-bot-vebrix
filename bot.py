@@ -1,7 +1,8 @@
 import discord
+from discord.ext import commands
 import responses
 
-TOKEN = 'MTE3NDQ5NDM1MzQ5MDcxODczMA.GOSoGF.pE1AiGdhb8oe-Lp4Qz3txlLwv2SaRCHqe8Qv2Q'
+TOKEN = 'MTE3NDQ5NDM1MzQ5MDcxODczMA.GlZPh1.5485e6VdMdHPqXQzz0kEtg5Yhzwx32DSA2lwlY'
 
 async def send_message(message, user_message, is_private):
     try:
@@ -10,18 +11,17 @@ async def send_message(message, user_message, is_private):
     
     except Exception as e:
         print(e)
-        
 
 
 def run_discord_bot():
-    TOKEN = 'MTE3NDQ5NDM1MzQ5MDcxODczMA.GOSoGF.pE1AiGdhb8oe-Lp4Qz3txlLwv2SaRCHqe8Qv2Q'
+    TOKEN = 'MTE3NDQ5NDM1MzQ5MDcxODczMA.GlZPh1.5485e6VdMdHPqXQzz0kEtg5Yhzwx32DSA2lwlY'
     intents = discord.Intents.default()
     intents.message_content = True
     client = discord.Client(intents=intents)
     
     @client.event
     async def on_ready():
-        print(f'{client.user} has connected to Discord!')
+        print(f'{client.user} is now live on Discord!')
         
     @client.event
     async def on_message(message):
@@ -42,3 +42,5 @@ def run_discord_bot():
             await send_message(message, user_message, is_private=False)
             
     client.run(TOKEN)
+    
+    
