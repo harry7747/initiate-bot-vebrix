@@ -15,6 +15,9 @@ def get_response(message: str) -> str:
     if p_message == "oliver":
         return 'Go study nigga'
     
+    if p_message == "What/s next?":
+        return 'I/m in development for supporting commands and events!'
+    
     if p_message == "hey":
         return 'initiate_process'
     

@@ -21,7 +21,7 @@ def run_discord_bot():
     
     @client.event
     async def on_ready():
-        print(f'{client.user} has connected to Discord!')
+        print(f'{client.user} is now live on Discord!')
         
     @client.event
     async def on_message(message):
